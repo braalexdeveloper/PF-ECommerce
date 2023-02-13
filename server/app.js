@@ -11,7 +11,7 @@ const setHeader = require("./src/util/middleware/setHeader");
 const errorHandler = require("./src/util/middleware/errorHandler");
 
 const app = express();
-const cartRoutes = require("../server/src/routes/cartRoutes");
+const cartRoutes = require("./src/routes/cartRoutes");
 const adminRoutes = require("./src/routes/adminRoutes");
 const shopRoutes = require("./src/routes/shopRoutes");
 const reviewRoutes = require("./src/routes/reviewRoutes");
