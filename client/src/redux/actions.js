@@ -52,7 +52,7 @@ import axios from "axios";
 //   "https://pf-ecommerce-production-3652.up.railway.app" ||
 //   "http://localhost:3001";
 
-const direction = "http://localhost:3001";
+const direction = process.env.REACT_APP_API;
 
 export const getBooks = () => async (dispatch) => {
   let dataBooks = await axios(`${direction}/shop/books`);
