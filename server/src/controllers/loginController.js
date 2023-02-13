@@ -59,7 +59,7 @@ const loginController = {
           picture: userCreated._previousDataValues.picture,
           //token: token
         };
-
+/*
         if (userCreated) {
           await axios.post("http://localhost:3001/alert/email", {
             emails: email,
@@ -77,7 +77,7 @@ const loginController = {
             },
           });
         }
-
+*/
         return res.status(200).json({
           status: 1,
           msg: "User registered successfully",
