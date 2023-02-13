@@ -107,7 +107,7 @@ const orderControllers = {
         console.log(det);
       });
 
-      if (payment.status === "succeeded") {
+     /*if (payment.status === "succeeded") {
         await axios.post("http://localhost:3001/alert/email", {
           emails: email,
           subject: `Orden ID:${id} confirmada`,
@@ -119,7 +119,7 @@ const orderControllers = {
           `,
           },
         });
-      }
+      }*/
 
       res.status(200).json(true);
     } catch (error) {
