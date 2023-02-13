@@ -162,7 +162,7 @@ function CheckoutForm() {
           .toFixed(2);
 
         const { data } = await axios.post(
-          "http://localhost:3001/checkout/create",
+          process.env.REACT_APP_API+"/checkout/create",
           {
             id,
             UserId: User.iduser,
